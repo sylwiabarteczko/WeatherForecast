@@ -2,15 +2,19 @@ package org.example;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Service;
 
 import java.io.IOException;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.util.Scanner;
 
+@Service
 public class WeatherService {
 
     private static final String API_KEY = "744312a178b94edaacb32247252706";
+
     public WeatherInfo getWeatherInfo(String cityName) throws IOException {
         String json = fetchJson(cityName);
         ObjectMapper mapper = new ObjectMapper();
