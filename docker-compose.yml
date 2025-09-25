@@ -1,0 +1,8 @@
+version: '3.1'
+
+services:
+  weather-backend:
+    image: weather-backend:1.0
+    container_name: weather-backend
+    ports:
+      - "5433:5432"

@@ -1,0 +1,7 @@
+target/*
+!target/*.jar
+.git
+.gitignore
+Dockerfile
+../.idea/docker-compose.yml
+README.md
