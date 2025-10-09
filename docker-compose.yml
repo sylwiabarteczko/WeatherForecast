@@ -5,4 +5,4 @@ services:
     image: weather-backend:1.0
     container_name: weather-backend
     ports:
-      - "5433:5432"
+      - "5433:8080"
