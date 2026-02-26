@@ -44,5 +44,3 @@ docker compose up -d
 ```
 💡 You can check if PostgreSQL is running by visiting
 Docker Desktop → Containers → postgres → running indicator should be in action.
-
-
